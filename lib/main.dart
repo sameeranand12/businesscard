@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 void main() {
+
   runApp(MyApp());
 }
 
@@ -9,7 +10,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         appBar: AppBar(
@@ -17,29 +20,31 @@ class MyApp extends StatelessWidget {
             title: Center(child: Text(' My Card'))),
         body: SafeArea(
           child: Column(
-
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
-              CircleAvatar(radius: 50.0, backgroundImage:AssetImage('images/sameer.jpg'),),
-              Text('Sameer Anand',
-                    style: TextStyle(fontFamily: 'Pacifico',
-                       fontSize: 30.0,
-                        color:Colors.white,
-                       fontWeight:FontWeight.bold
-                    ),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/sameer.jpg'),
               ),
-              Text ('FLUTTER DEVELOPER',
-                  style: TextStyle(
-                  fontFamily: 'Source Sans Pro',
-                  fontSize: 20.0,
-                  color:Colors.teal.shade100,
-                    letterSpacing: 2.5
-
-                ),
-              ),//gfhh
+              Text(
+                'Sameer Anand',
+                style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.5),
+              ),
               SizedBox(
-                height: 20.0, width: 150.0,
+                height: 20.0,
+                width: 150.0,
                 child: Divider(
                   color: Colors.teal.shade100,
                 ),
@@ -47,34 +52,79 @@ class MyApp extends StatelessWidget {
               Card(
                 color: Colors.white,
                 //padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0 , horizontal: 25.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
 
-                  child:ListTile(
-                    leading: Icon(Icons.phone, color: Colors.teal,),
-                    title:Text('7800716808',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900),),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '7800716808',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900),
                   ),
                 ),
+              ),
+              Card(
+                color: Colors.white,
+                //padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
 
-
-                  Card(
-                  color: Colors.white,
-                  //padding: EdgeInsets.all(10.0),
-                  margin: EdgeInsets.symmetric(vertical: 10.0 , horizontal: 25.0),
-
-                    child:ListTile(
-                    leading: Icon(Icons.mail, color: Colors.teal,),
-                    title:Text('201951134@iiitvadodara.ac.in',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900),),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '201951134@iiitvadodara.ac.in',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900),
                   ),
                 ),
+              ),
+              Card(
+                color: Colors.white,
+                //padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
 
+                child: ListTile(
+                  leading: Icon(
+                    Icons.bug_report,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'https://github.com/sameeranand12',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                //padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+
+                child: ListTile(
+                  leading: Icon(
+                    Icons.group_add,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'www.linkedin.com/in/sameeranand12',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
