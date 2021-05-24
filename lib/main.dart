@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
             title: Center(child: Text(' My Card'))),
         body: SafeArea(
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.,
             children: [
               CircleAvatar(radius: 50.0, backgroundImage:AssetImage('images/sameer.jpg'),),
               Text('Sameer Anand',
@@ -26,16 +27,47 @@ class MyApp extends StatelessWidget {
                        fontWeight:FontWeight.bold
                     ),
               ),
-              Container(
-                 child: Text ('FLUTTER DEVELOPER',
+              Text ('FLUTTER DEVELOPER',
                   style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   fontSize: 20.0,
                   color:Colors.teal.shade100,
                     letterSpacing: 2.5
 
-                ), ),
+                ),
               ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0 , horizontal: 25.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.phone, color: Colors.teal,),
+                    SizedBox(width: 10.0,),
+                    Text('7800716808',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900),)
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0 , horizontal: 25.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.mail, color: Colors.teal,),
+                    SizedBox(width: 10.0,),
+                    Text('201951134@iiitvadodara.ac.in',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                          color: Colors.teal.shade900),),
+                  ],
+                ),
+              )
             ],
           ),
         ),
