@@ -28,8 +28,7 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'Sameer Anand',
-                style: TextStyle(
-                    fontFamily: 'Pacifico',
+                style: TextStyle(fontFamily: 'Pacifico',
                     fontSize: 30.0,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
@@ -48,7 +47,7 @@ class MyApp extends StatelessWidget {
                 child: Divider(
                   color: Colors.teal.shade100,
                 ),
-              ),
+              ),//just to make green
               Card(
                 color: Colors.white,
                 //padding: EdgeInsets.all(10.0),
